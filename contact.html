@@ -85,7 +85,7 @@ fieldset {
 
 #contact input[type="text"],
 #contact input[type="email"],
-#contact input[type="tel"],
+#contact input[type="number"],
 #contact input[type="url"],
 #contact textarea {
   width: 25%;
@@ -289,10 +289,9 @@ img{
     <fieldset>
       <input placeholder="Your Email Address" type="email" tabindex="2" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="_replyto" required>
     </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number (optional)" type="number" tabindex="3" name=number  maxlength="11"> 
-    </fieldset>
-    <fieldset>
+       <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="number" tabindex="3" name="number"  maxlength="11" > </fieldset>
+    
     <fieldset>
       <textarea placeholder="Type your message here...." tabindex="5" name="comment" required></textarea>
     </fieldset>
