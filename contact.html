@@ -277,24 +277,24 @@ img{
                  
 <div style="text-align: center">      
 <div class="container">  
-  <form id="contact" action="https://formspree.io/adamcoventry96@gmail.com"
-      method="POST">>
+ <form id="contact" action="https://formspree.io/adamcoventry96@gmail.com"
+      method="POST">
     <h6 style="text-align: center" style="color: red">Contact Me</h6>
     <fieldset>
-      <input placeholder="First name" type="text" tabindex="1" pattern=[a-zA-Z]+ title="e.g. Joe" required>
+      <input placeholder="First name" type="text" tabindex="1" pattern=[a-zA-Z]+ title="e.g. Joe" name="name" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Last name" type="text" tabindex="1" pattern=[a-zA-Z]+ title="e.g. Bloggs" required >
+      <input placeholder="Last name" type="text" tabindex="1" pattern=[a-zA-Z]+ title="e.g. Bloggs" name="name" required >
     </fieldset>
     <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+      <input placeholder="Your Email Address" type="email" tabindex="2" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="_replyto" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3"  maxlength="11"> 
+      <input placeholder="Your Phone Number (optional)" type="number" tabindex="3" name=number  maxlength="11"> 
     </fieldset>
     <fieldset>
     <fieldset>
-      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+      <textarea placeholder="Type your message here...." tabindex="5" name="comment" required></textarea>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="Sending">Submit</button>
