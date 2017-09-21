@@ -33,12 +33,14 @@
                 </nav>     
         </header>     
                   
-                <section id="newsletter">
+                  <section id="newsletter">
                     <div class="container">
                     <h1> Subscribe for updates about my services </h1>
-                    <form>
+                    <form action="https://formspree.io/adamcoventry96@gmail.com"
+      method="POST">
                         <input type="email" placeholder="Enter Email...">
                         <button type="submit" class="button_1">Subscribe</button>
+                        <input type="hidden" name="_next" value="//almedia96.github.io/subscribe.html" />
                     </form>
                     </div>
                  </section>
@@ -87,7 +89,8 @@
                 <aside id="sidebar">
                     <div class="dark">
             <h3>Get A Quote</h3>
-            <form class="quote">
+            <form id="contact" action="https://formspree.io/adamcoventry96@gmail.com"
+      method="POST" class="quote">
   						<div>
   							<label>Name</label><br>
   							<input type="text" placeholder="Name" tabindex="1" pattern=[a-zA-Z]+ title="e.g. Joe" required>
@@ -101,6 +104,8 @@
   							<textarea placeholder="Details of Services" tabindex="5" required></textarea>
   						</div>
   						<button class="button_1" type="submit">Send</button>
+
+                          <input type="hidden" name="_next" value="//almedia96.github.io/quote.html" />
 					</form>
                 </div>
                 </aside>    
